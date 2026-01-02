@@ -1,0 +1,142 @@
+[
+  {
+    "name": "Newborn Baby Care",
+    "category": "Baby Care",
+    "description": "Professional newborn care including feeding, bathing, and sleep support.",
+    "pricePerHour": 500,
+    "image": "https://i.ibb.co/M53H8Lyj/images-q-tbn-ANd9-Gc-T7-Mk6n-VAVu53r-GZ67cyes03-Jioxqqf-Jq6-Ifu-7-IIJXng-s.jpg"
+  },
+  {
+    "name": "Daytime Babysitting",
+    "category": "Baby Care",
+    "description": "Reliable daytime babysitting service for working parents.",
+    "pricePerHour": 480,
+    "image": "https://i.ibb.co/M53H8Lyj/images-q-tbn-ANd9-Gc-T7-Mk6n-VAVu53r-GZ67cyes03-Jioxqqf-Jq6-Ifu-7-IIJXng-s.jpg"
+  },
+  {
+    "name": "Night Baby Care",
+    "category": "Baby Care",
+    "description": "Overnight baby care ensuring peaceful sleep for parents.",
+    "pricePerHour": 600,
+    "image": "https://i.ibb.co/M53H8Lyj/images-q-tbn-ANd9-Gc-T7-Mk6n-VAVu53r-GZ67cyes03-Jioxqqf-Jq6-Ifu-7-IIJXng-s.jpg"
+  },
+  {
+    "name": "Infant Feeding Support",
+    "category": "Baby Care",
+    "description": "Bottle feeding and nutrition monitoring by trained caregivers.",
+    "pricePerHour": 520,
+    "image": "https://i.ibb.co/M53H8Lyj/images-q-tbn-ANd9-Gc-T7-Mk6n-VAVu53r-GZ67cyes03-Jioxqqf-Jq6-Ifu-7-IIJXng-s.jpg"
+  },
+  {
+    "name": "Baby Playtime Care",
+    "category": "Baby Care",
+    "description": "Engaging play activities supporting early development.",
+    "pricePerHour": 450,
+    "image": "https://i.ibb.co/M53H8Lyj/images-q-tbn-ANd9-Gc-T7-Mk6n-VAVu53r-GZ67cyes03-Jioxqqf-Jq6-Ifu-7-IIJXng-s.jpg"
+  },
+  {
+    "name": "Toddler Care Service",
+    "category": "Baby Care",
+    "description": "Specialized care for toddlers with safety and learning focus.",
+    "pricePerHour": 550,
+    "image": "https://i.ibb.co/M53H8Lyj/images-q-tbn-ANd9-Gc-T7-Mk6n-VAVu53r-GZ67cyes03-Jioxqqf-Jq6-Ifu-7-IIJXng-s.jpg"
+  },
+  {
+    "name": "Home Babysitting",
+    "category": "Baby Care",
+    "description": "In-home babysitting in a familiar environment.",
+    "pricePerHour": 500,
+    "image": "https://i.ibb.co/M53H8Lyj/images-q-tbn-ANd9-Gc-T7-Mk6n-VAVu53r-GZ67cyes03-Jioxqqf-Jq6-Ifu-7-IIJXng-s.jpg"
+  },
+  {
+    "name": "Emergency Baby Care",
+    "category": "Baby Care",
+    "description": "Quick-response baby care for emergency situations.",
+    "pricePerHour": 650,
+    "image": "https://i.ibb.co/M53H8Lyj/images-q-tbn-ANd9-Gc-T7-Mk6n-VAVu53r-GZ67cyes03-Jioxqqf-Jq6-Ifu-7-IIJXng-s.jpg"
+  },
+  {
+    "name": "Weekend Babysitting",
+    "category": "Baby Care",
+    "description": "Weekend babysitting service for family outings and events.",
+    "pricePerHour": 520,
+    "image": "https://i.ibb.co/M53H8Lyj/images-q-tbn-ANd9-Gc-T7-Mk6n-VAVu53r-GZ67cyes03-Jioxqqf-Jq6-Ifu-7-IIJXng-s.jpg"
+  },
+  {
+    "name": "Baby Hygiene Care",
+    "category": "Baby Care",
+    "description": "Diaper changing, bathing, and hygiene maintenance.",
+    "pricePerHour": 480,
+    "image": "https://i.ibb.co/M53H8Lyj/images-q-tbn-ANd9-Gc-T7-Mk6n-VAVu53r-GZ67cyes03-Jioxqqf-Jq6-Ifu-7-IIJXng-s.jpg"
+  },
+  {
+    "name": "Baby Meal Preparation",
+    "category": "Baby Care",
+    "description": "Healthy meal preparation according to baby’s diet needs.",
+    "pricePerHour": 470,
+    "image": "https://i.ibb.co/M53H8Lyj/images-q-tbn-ANd9-Gc-T7-Mk6n-VAVu53r-GZ67cyes03-Jioxqqf-Jq6-Ifu-7-IIJXng-s.jpg"
+  },
+  {
+    "name": "Baby Safety Monitoring",
+    "category": "Baby Care",
+    "description": "Continuous monitoring to ensure baby safety at all times.",
+    "pricePerHour": 530,
+    "image": "https://i.ibb.co/M53H8Lyj/images-q-tbn-ANd9-Gc-T7-Mk6n-VAVu53r-GZ67cyes03-Jioxqqf-Jq6-Ifu-7-IIJXng-s.jpg"
+  },
+  {
+    "name": "Baby Sleep Assistance",
+    "category": "Baby Care",
+    "description": "Helping babies develop healthy sleep routines.",
+    "pricePerHour": 510,
+    "image": "https://i.ibb.co/M53H8Lyj/images-q-tbn-ANd9-Gc-T7-Mk6n-VAVu53r-GZ67cyes03-Jioxqqf-Jq6-Ifu-7-IIJXng-s.jpg"
+  },
+  {
+    "name": "Baby Travel Care",
+    "category": "Baby Care",
+    "description": "Care support while traveling with infants.",
+    "pricePerHour": 600,
+    "image": "https://i.ibb.co/M53H8Lyj/images-q-tbn-ANd9-Gc-T7-Mk6n-VAVu53r-GZ67cyes03-Jioxqqf-Jq6-Ifu-7-IIJXng-s.jpg"
+  },
+  {
+    "name": "Baby Exercise Support",
+    "category": "Baby Care",
+    "description": "Light physical activities to improve baby mobility.",
+    "pricePerHour": 460,
+    "image": "https://i.ibb.co/M53H8Lyj/images-q-tbn-ANd9-Gc-T7-Mk6n-VAVu53r-GZ67cyes03-Jioxqqf-Jq6-Ifu-7-IIJXng-s.jpg"
+  },
+  {
+    "name": "Baby Health Observation",
+    "category": "Baby Care",
+    "description": "Basic health monitoring and reporting to parents.",
+    "pricePerHour": 580,
+    "image": "https://i.ibb.co/M53H8Lyj/images-q-tbn-ANd9-Gc-T7-Mk6n-VAVu53r-GZ67cyes03-Jioxqqf-Jq6-Ifu-7-IIJXng-s.jpg"
+  },
+  {
+    "name": "Baby Learning Activities",
+    "category": "Baby Care",
+    "description": "Early learning activities for brain development.",
+    "pricePerHour": 490,
+    "image": "https://i.ibb.co/M53H8Lyj/images-q-tbn-ANd9-Gc-T7-Mk6n-VAVu53r-GZ67cyes03-Jioxqqf-Jq6-Ifu-7-IIJXng-s.jpg"
+  },
+  {
+    "name": "Baby Outdoor Care",
+    "category": "Baby Care",
+    "description": "Outdoor supervision for fresh air and play.",
+    "pricePerHour": 470,
+    "image": "https://i.ibb.co/M53H8Lyj/images-q-tbn-ANd9-Gc-T7-Mk6n-VAVu53r-GZ67cyes03-Jioxqqf-Jq6-Ifu-7-IIJXng-s.jpg"
+  },
+  {
+    "name": "Baby Feeding Schedule Care",
+    "category": "Baby Care",
+    "description": "Maintaining regular feeding schedules.",
+    "pricePerHour": 500,
+    "image": "https://i.ibb.co/M53H8Lyj/images-q-tbn-ANd9-Gc-T7-Mk6n-VAVu53r-GZ67cyes03-Jioxqqf-Jq6-Ifu-7-IIJXng-s.jpg"
+  },
+  {
+    "name": "Premium Baby Care",
+    "category": "Baby Care",
+    "description": "Premium personalized baby care with trained professionals.",
+    "pricePerHour": 700,
+    "image": "https://i.ibb.co/M53H8Lyj/images-q-tbn-ANd9-Gc-T7-Mk6n-VAVu53r-GZ67cyes03-Jioxqqf-Jq6-Ifu-7-IIJXng-s.jpg"
+  }
+]
