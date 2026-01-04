@@ -4,7 +4,6 @@ import Link from "next/link";
 
 const ServicesCard = ({ service }) => {
   const { name, category, description, pricePerHour, image } = service;
-  console.log(service)
   return (
     <div className="max-w-sm bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
       <Image
