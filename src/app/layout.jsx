@@ -1,7 +1,6 @@
 import { Geist, Geist_Mono, Poppins } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/layouts/Navbar";
-import Footer from "@/components/layouts/Footer";
+
 
 
 const poppins = Poppins(
@@ -24,11 +23,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${poppins.className}antialiased`}
+        className={[poppins.className, "antialiased"].join(" ")}
       >
        
 
-        <main className="py-2 md:w-11/12 mx-auto min-h-[calc(100vh-302px)]">
+        <main className="py-2 min-h-[calc(100vh-302px)]">
 
         {children}
         </main>

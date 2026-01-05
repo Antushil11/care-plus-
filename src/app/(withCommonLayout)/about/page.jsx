@@ -1,11 +1,12 @@
 import React from 'react';
 
-const loading = () => {
+const about = () => {
     return (
         <div>
+            about
             
         </div>
     );
 };
 
-export default loading;
+export default about;

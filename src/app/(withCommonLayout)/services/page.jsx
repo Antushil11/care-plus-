@@ -1,11 +1,14 @@
-import React from "react";
+import React from 'react';
 
-const Homepage = () => {
+const ServiceDetailspage = async ({params}) => {
+  const {id} = await params;
+  console.log(id)
   return (
-    <div className=" flex items-center justify-center font-bold text-5xl text-purple-500">
-      Homepage
+    <div>
+      services
+      
     </div>
   );
 };
 
-export default Homepage;
+export default ServiceDetailspage;
