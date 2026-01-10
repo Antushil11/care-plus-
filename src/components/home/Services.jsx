@@ -1,6 +1,6 @@
 import React from "react";
 import service from "@/data/boby.json";
-import ServicesCard from "../cards/ServicesCard";
+import ServicesCard from "../../app/(withCommonLayout)/services/_components/cards/ServicesCard";
 
 const services = () => {
   return (

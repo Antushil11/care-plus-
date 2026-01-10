@@ -27,7 +27,7 @@ export default function RootLayout({ children }) {
       >
        
 
-        <main className="py-2 min-h-[calc(100vh-302px)]">
+        <main className="py-2 min-h-screen">
 
         {children}
         </main>

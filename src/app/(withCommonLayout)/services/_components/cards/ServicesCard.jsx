@@ -5,11 +5,11 @@ import Link from "next/link";
 const ServicesCard = ({ service }) => {
   const { name, category, description, pricePerHour, image } = service;
   return (
-    <div className="max-w-sm bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
+    <div className="max-w-full bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
       <Image
         src={image}
         alt={name}
-        width={400}
+        width={800}
         height={300}
         className="object-cover"
       />
@@ -26,7 +26,7 @@ const ServicesCard = ({ service }) => {
             ৳{pricePerHour}/hour
           </p>
 
-          <Link href={`/services/${service._id}`} className="px-4 py-2 bg-blue-600 text-white text-sm rounded-lg hover:bg-blue-700">
+          <Link href={`/services/${service?._id}`} className="px-4 py-2 bg-blue-600 text-white text-sm rounded-lg hover:bg-blue-700">
             Book Now
           </Link>
         </div>

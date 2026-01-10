@@ -7,21 +7,36 @@ export async function GET(request) {
   return Response.json(result);
 }
 export async function POST(request) {
-  const { message } = await request.json();
+  const service = await request.json();
 
-  if (!message || typeof message !== "string") {
+  if (!service?.serviceDetail?.serviceSlug) {
     return Response.json({
       status: 400,
-      message: "Please send a massage",
+      message: "Invalid service data"
     });
   }
 
-  const newServices = {message, date:new Date().toISOString()};
-
-  const result = await servicesCollection.insertOne(newServices)
-
-
-
-
+  const result = await servicesCollection.insertOne(service);
   return Response.json(result);
 }
+
+
+// export async function POST(request) {
+//   const { message } = await request.json();
+
+//   if (!message || typeof message !== "string") {
+//     return Response.json({
+//       status: 400,
+//       message: "Please send a massage",
+//     });
+//   }
+
+//   const newServices = {message, date:new Date().toISOString()};
+
+//   const result = await servicesCollection.insertOne(newServices)
+
+
+
+
+//   return Response.json(result);
+// }
