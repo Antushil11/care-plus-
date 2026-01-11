@@ -5,6 +5,10 @@ import ContainerPage from "@/components/container/page";
 const getAllServices = async () => {
   const res = await fetch("http://localhost:3000/api/server");
 
+  await new Promise(reslove=> setTimeout(() => {
+    reslove()
+  }, 3000))
+
   const data = await res.json();
 
   return data;
@@ -17,7 +21,7 @@ const Servicespage = async () => {
       <ContainerPage>
         <h2>Servicespage</h2>
 
-        <div className="grid grid-cols-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2  md:grid-cols-3 lg:grid-cols-4 ">
           {services.map((service) => {
             return (
               <ServicesCard key={service._id} service={service}></ServicesCard>
