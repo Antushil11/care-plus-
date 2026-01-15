@@ -1,11 +1,13 @@
 "use client";
 
 import { UserContext } from "@/context/user_context";
-import { use,  } from "react";
+import { useRouter } from "next/navigation";
+import { use  } from "react";
 
 export default function LoginPage() {
 
-    const {user, setUser} = use(UserContext)
+    const { setUser} = use(UserContext);
+    const router = useRouter()
 
     const handleSubmit = async(e) =>{
         e.preventDefault();
@@ -25,9 +27,11 @@ export default function LoginPage() {
           
             setUser()
             alert("Login Successfull")
+            router.push("/services")
         }
         else{
             alert("Creatial invalid:")
+            setUser(null)
         }
     }
   return (
