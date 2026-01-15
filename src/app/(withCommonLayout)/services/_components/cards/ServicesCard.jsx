@@ -27,7 +27,7 @@ const ServicesCard = ({ service }) => {
           </p>
 
           <Link href={`/services/${service?._id}`} className="px-4 py-2 bg-blue-600 text-white text-sm rounded-lg hover:bg-blue-700">
-            Book Now
+             Service Details
           </Link>
         </div>
       </div>

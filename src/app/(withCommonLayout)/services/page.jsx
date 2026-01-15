@@ -3,7 +3,7 @@ import ServicesCard from "./_components/cards/ServicesCard";
 import ContainerPage from "@/components/container/page";
 
 const getAllServices = async () => {
-  const res = await fetch("http://localhost:3000/api/server");
+  const res = await fetch(`http://localhost:3000/api/server`);
 
   await new Promise(reslove=> setTimeout(() => {
     reslove()
