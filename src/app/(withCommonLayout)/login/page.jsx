@@ -16,7 +16,7 @@ export default function LoginPage() {
 
         console.log(email, password)
 
-        if(email === "as@gmai.com" && password==="1234"){
+        if(email === "as@gmail.com" && password==="1234"){
             
             const Currentuser ={
                 email,
@@ -25,9 +25,9 @@ export default function LoginPage() {
             }
             console.log(Currentuser)
           
-            setUser()
+            setUser(Currentuser); 
             alert("Login Successfull")
-            router.push("/services")
+            router.push("/Dashboard")
         }
         else{
             alert("Creatial invalid:")

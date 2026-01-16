@@ -1,14 +1,18 @@
 import ContainerPage from "@/components/container/page";
 import Image from "next/image";
 import React from "react";
+import BookingBtn from "../_components/cards/BookingBtn";
+import { getSingleServices } from "@/services/servicesAction";
 
-const getSingleServices = async (id) => {
-  const res = await fetch(`http://localhost:3000/api/server/${id}`);
+// const getSingleServices = async (id) => {
+//   const res = await fetch(`http://localhost:3000/api/server/${id}`);
 
-  const data = await res.json();
+//   const data = await res.json();
 
-  return data;
-};
+//   return data;
+// };
+
+
 
 const ServicesDetailpage = async ({ params }) => {
   const { slug } = await params;
@@ -36,9 +40,8 @@ const ServicesDetailpage = async ({ params }) => {
         <p className="font-bold text-xl mb-4">
           Price per hour: ${serviceRes.pricePerHour}
         </p>
-        <button className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition">
-          Book Service
-        </button>
+        <BookingBtn service={serviceRes} />
+
       </div>
     </ContainerPage>
   );

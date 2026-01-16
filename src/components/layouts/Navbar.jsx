@@ -1,10 +1,15 @@
-import React from "react";
+"use client";
+import React, {  useContext } from "react";
 import Logo from "../logo/Logo";
 import NavLink from "../buttons/NavLink";
 import Link from "next/link";
 import ContainerPage from "../container/page";
+import { UserContext } from "@/context/user_context";
 
 const Navbar = () => {
+  const { user } = useContext(UserContext);
+  
+  console.log("user: ",user);
   const nav = (
     <div className="flex font-semibold">
       <li>
@@ -56,9 +61,15 @@ const Navbar = () => {
           <ul className="menu menu-horizontal px-1">{nav}</ul>
         </div>
         <div className="navbar-end">
-          <Link href={"/login"}>
-            <button className="btn btn-primary btn-outline">Login</button>
-          </Link>
+          {user ? (
+            <Link href={"/Dashboard"}>
+              <button className="btn btn-primary btn-outline">Dashboard</button>
+            </Link>
+          ) : (
+            <Link href={"/login"}>
+              <button className="btn btn-primary btn-outline">Login</button>
+            </Link>
+          )}
         </div>
       </div>
     </ContainerPage>

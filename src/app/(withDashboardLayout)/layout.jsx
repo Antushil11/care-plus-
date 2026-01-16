@@ -1,3 +1,4 @@
+"use client";
 import DashboardSidebar from "@/components/DashboardSidebar/DashboardSidebar";
 import React from "react";
 
