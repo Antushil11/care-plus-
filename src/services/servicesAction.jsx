@@ -10,7 +10,7 @@ export const getSingleServices = async (id) => {
 
 
 export const getAllServices = async () => {
-  const res = await fetch(`http://localhost:3000/api/server`);
+  const res = await fetch(`http://localhost:3000/api/server`)
 
   await new Promise((reslove) =>
     setTimeout(() => {
