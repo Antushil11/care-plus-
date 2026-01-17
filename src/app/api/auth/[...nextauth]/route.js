@@ -1,34 +1,40 @@
 import NextAuth from "next-auth";
 import GithubProvider from "next-auth/providers/github";
+import CredentialsProvider from "next-auth/providers/credentials";
+
+
+const user = {
+    id:"1",
+    name:"john Doe",
+    email:"test@gmail.com",
+    password:"1234"
+}
 
 export const authOptions = {
+  // Configure one or more authentication providers
   providers: [
     CredentialsProvider({
-      // The name to display on the sign in form (e.g. 'Sign in with...')
-      name: "Credentials",
+      name: "Credentials ",
 
       credentials: {
         email: {
-          label: "Username",
+          label: "Email",
           type: "text",
-          placeholder: "jsmith",
+          placeholder: "Enter your Email",
         },
         password: {
           label: "Password",
           type: "password",
-          placeholder: "Enter Your Password",
+          placeholder: "password",
         },
       },
-      
       async authorize(credentials, req) {
 
-        //step 1:
-        console.log(credentials,"credentials")
+        if(user){
+            return user
+        }
 
-
-        //step-2
-
-      
+        console.log(credentials,"credentials");
         return null;
       },
     }),
@@ -36,5 +42,4 @@ export const authOptions = {
 };
 
 const handler = NextAuth(authOptions);
-
 export { handler as GET, handler as POST };

@@ -1,15 +1,16 @@
 "use client";
-import React, {  useContext } from "react";
+import React, { useContext } from "react";
 import Logo from "../logo/Logo";
 import NavLink from "../buttons/NavLink";
 import Link from "next/link";
 import ContainerPage from "../container/page";
-import { UserContext } from "@/context/user_context";
+
+import { signIn, signOut, useSession } from "next-auth/react";
 
 const Navbar = () => {
-  const { user } = useContext(UserContext);
-  
-  console.log("user: ",user);
+  const { data: session, status } = useSession();
+  console.log(session, status);
+
   const nav = (
     <div className="flex font-semibold">
       <li>
@@ -61,14 +62,24 @@ const Navbar = () => {
           <ul className="menu menu-horizontal px-1">{nav}</ul>
         </div>
         <div className="navbar-end">
-          {user ? (
-            <Link href={"/Dashboard"}>
-              <button className="btn btn-primary btn-outline">Dashboard</button>
-            </Link>
+          {status === "loading" ? (
+            <button disabled>Loading ..</button>
+          ) : session?.user?.email ? (
+            <div className="flex items-center gap-2">
+              <button onClick={() => signOut()} className=" btn btn-primary btn-outline">Sign Out</button>
+              <Link href={"/Dashboard"}>
+                <button className="btn btn-primary btn-outline">
+                  Dashboard
+                </button>
+              </Link>
+            </div>
           ) : (
-            <Link href={"/login"}>
-              <button className="btn btn-primary btn-outline">Login</button>
-            </Link>
+            <button
+              onClick={() => signIn()}
+              className="btn btn-primary btn-outline"
+            >
+              Login
+            </button>
           )}
         </div>
       </div>
