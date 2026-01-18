@@ -36,7 +36,7 @@ export default function SignupPage() {
       return;
     }
 
-    const Currentuser = { nid, name, email, contact, photoURL };
+    const Currentuser = { nid, name, email, contact, photoURL,password , role:"user"};
     setUser(Currentuser);
     console.log(Currentuser)
 

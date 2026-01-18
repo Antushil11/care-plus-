@@ -6,6 +6,7 @@ import Link from "next/link";
 import ContainerPage from "../container/page";
 
 import { signIn, signOut, useSession } from "next-auth/react";
+import Image from "next/image";
 
 const Navbar = () => {
   const { data: session, status } = useSession();
@@ -33,21 +34,15 @@ const Navbar = () => {
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                {" "}
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M4 6h16M4 12h8m-8 6h16"
-                />{" "}
-              </svg>
+              <Link href={"/"}>
+                <Image
+                  src="https://car-cleanify.vercel.app/assets/logo-BpOrj-RN.png"
+                  alt="Logo"
+                  width={60}
+                  height={60}
+                  className="h-[60px] w-[60px]"
+                />
+              </Link>
             </div>
             <ul
               tabIndex="-1"
@@ -66,7 +61,12 @@ const Navbar = () => {
             <button disabled>Loading ..</button>
           ) : session?.user?.email ? (
             <div className="flex items-center gap-2">
-              <button onClick={() => signOut()} className=" btn btn-primary btn-outline">Sign Out</button>
+              <button
+                onClick={() => signOut()}
+                className=" btn btn-primary btn-outline"
+              >
+                Sign Out
+              </button>
               <Link href={"/Dashboard"}>
                 <button className="btn btn-primary btn-outline">
                   Dashboard
@@ -74,12 +74,20 @@ const Navbar = () => {
               </Link>
             </div>
           ) : (
-            <button
-              onClick={() => signIn()}
-              className="btn btn-primary btn-outline"
-            >
-              Login
-            </button>
+            <div className="flex gap-2 items-center">
+              <button
+                onClick={() => signIn()}
+                className="btn btn-primary btn-outline"
+              >
+                Login
+              </button>
+              <Link href="/signup">
+                <button className="btn btn-primary btn-outline">
+                  {" "}
+                  Register
+                </button>
+              </Link>
+            </div>
           )}
         </div>
       </div>
