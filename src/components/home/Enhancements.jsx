@@ -4,52 +4,54 @@ import React from "react";
 import { motion } from "framer-motion";
 import ContainerPage from "../container/page";
 
-const enhancementsData = [
+const doctorEnhancements = [
   {
-    title: "Animations on Scroll",
+    title: "Home Doctor Visits",
     description:
-      "Elements appear smoothly as you scroll down the page using fade or slide effects.",
+      "Qualified doctors visit your home for regular checkups, diagnosis, and consultations.",
   },
   {
-    title: "Hover Effects",
+    title: "Telemedicine",
     description:
-      "Buttons and cards scale, change color, or add shadows when hovered for a modern feel.",
+      "Consult certified doctors online via video or chat for non-emergency medical advice.",
   },
   {
-    title: "Gradient Backgrounds",
+    title: "Specialist Consultation",
     description:
-      "Add colorful gradients to sections, buttons, or cards to make your site vibrant.",
+      "Get appointments with specialists like cardiologists, pediatricians, and more.",
   },
   {
-    title: "Interactive Cards",
+    title: "24/7 Availability",
     description:
-      "Cards that flip, tilt, or animate when hovered improve user engagement.",
+      "Access doctors anytime for urgent care, guidance, or medical support.",
   },
   {
-    title: "Smooth Scroll & Parallax",
+    title: "Personalized Care Plans",
     description:
-      "Create smooth scrolling and parallax effects for a dynamic experience.",
+      "Doctors create personalized care plans based on your health needs.",
   },
 ];
 
-const Enhancements = () => {
+const DoctorEnhancements = () => {
   return (
-    <section className="">
+    <section className="py-16">
       <ContainerPage>
+        {/* Heading */}
         <div className="text-center mb-12">
           <h1 className="text-4xl md:text-5xl font-bold text-primary">
-            Enhancements & Features
+            Our Doctor Services
           </h1>
-          <p className="text-gray-600 mt-4">
-            Discover the interactive and modern features added to make your experience smooth and engaging.
+          <p className="text-gray-600 mt-4 max-w-2xl mx-auto">
+            Discover the key features and services we provide to ensure professional, reliable, and convenient medical care.
           </p>
         </div>
 
+        {/* Cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {enhancementsData.map((item, index) => (
+          {doctorEnhancements.map((item, index) => (
             <motion.div
               key={index}
-              className="bg-white/80 backdrop-blur-md p-6 rounded-2xl shadow-lg hover:shadow-2xl hover:scale-105 transition-transform duration-300"
+              className="bg-white/90 backdrop-blur-md p-6 rounded-2xl shadow-lg hover:shadow-2xl hover:scale-105 transition-transform duration-300"
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -66,4 +68,4 @@ const Enhancements = () => {
   );
 };
 
-export default Enhancements;
+export default DoctorEnhancements;

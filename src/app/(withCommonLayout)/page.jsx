@@ -6,6 +6,7 @@ import AboutPage from "./about/page";
 import TestimonialsPage from "@/components/home/testimonial";
 
 import Enhancements from "@/components/home/Enhancements";
+import DoctorServicePage from "@/components/home/DoctorServicePage";
 
 const Homepage = () => {
   return (
@@ -15,6 +16,9 @@ const Homepage = () => {
           <Banner></Banner>
         </div>
       </ContainerPage>
+      <div className="mt-10">
+        <DoctorServicePage></DoctorServicePage>
+      </div>
       <div className="mt-10">
         <TestimonialsPage></TestimonialsPage>
       </div>
