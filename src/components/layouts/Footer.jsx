@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import Logo from "../logo/Logo";
 import ContainerPage from "../container/page";
@@ -6,15 +8,13 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <div className="bg-neutral mt-10">
+    <footer className="bg-neutral text-white mt-10">
       <ContainerPage>
-        <div className="footer  sm:footer-horizontal text-white p-10 ">
-          
-                  <aside>
-           
+        <div className="flex flex-col md:flex-row md:justify-between gap-10 md:gap-0 py-10">
+          {/* Logo & Social */}
+          <div className="flex flex-col items-start md:w-1/4">
             <Logo />
-
-            <p className="mt-4 max-w-xs">
+            <p className="mt-4 max-w-xs text-gray-300">
               Building modern digital solutions with care and quality.
             </p>
 
@@ -56,34 +56,47 @@ const Footer = () => {
                 <FaGithub />
               </a>
             </div>
-          </aside>
+          </div>
 
-          
-           
-            <nav className=" ml-60 mr-60 ">
-              <h6 className="footer-title ">Services</h6>
-              <a className="link link-hover mt-4">Branding</a>
-              <a className="link link-hover mt-2">Design</a>
-              <a className="link link-hover  mt-2">Marketing</a>
-              <a className="link link-hover mt-2">Advertisement</a>
+          {/* Navigation Links */}
+          <div className="flex flex-col sm:flex-row md:w-3/4 justify-between gap-10">
+            <nav>
+              <h6 className="footer-title text-white font-semibold mb-4">Services</h6>
+              <ul className="flex flex-col gap-2 text-gray-300">
+                <li><Link href="#">Branding</Link></li>
+                <li><Link href="#">Design</Link></li>
+                <li><Link href="#">Marketing</Link></li>
+                <li><Link href="#">Advertisement</Link></li>
+              </ul>
             </nav>
-            <nav className=" ml-60 mr-60">
-              <h6 className="footer-title">Company</h6>
-              <a className="link link-hover mt-4">About us</a>
-              <a className="link link-hover mt-2">Contact</a>
-              <a className="link link-hover mt-2">Jobs</a>
-              <a className="link link-hover mt-2">Press kit</a>
+
+            <nav>
+              <h6 className="footer-title text-white font-semibold mb-4">Company</h6>
+              <ul className="flex flex-col gap-2 text-gray-300">
+                <li><Link href="#">About us</Link></li>
+                <li><Link href="#">Contact</Link></li>
+                <li><Link href="#">Jobs</Link></li>
+                <li><Link href="#">Press kit</Link></li>
+              </ul>
             </nav>
-            <nav className=" ml-60 ">
-              <h6 className="footer-title">Legal</h6>
-              <a className="link link-hover mt-4">Terms of use</a>
-              <a className="link link-hover mt-2">Privacy policy</a>
-              <a className="link link-hover mt-2">Cookie policy</a>
+
+            <nav>
+              <h6 className="footer-title text-white font-semibold mb-4">Legal</h6>
+              <ul className="flex flex-col gap-2 text-gray-300">
+                <li><Link href="#">Terms of use</Link></li>
+                <li><Link href="#">Privacy policy</Link></li>
+                <li><Link href="#">Cookie policy</Link></li>
+              </ul>
             </nav>
-          
+          </div>
+        </div>
+
+        {/* Footer Bottom */}
+        <div className="text-center text-gray-400 py-4 border-t border-gray-700 mt-6 text-sm">
+          &copy; {new Date().getFullYear()} Your Company. All rights reserved.
         </div>
       </ContainerPage>
-    </div>
+    </footer>
   );
 };
 

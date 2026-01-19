@@ -68,38 +68,7 @@ const testimonials = [
     message:
       "A top-notch experience! The team went above and beyond to make sure I was satisfied. Great job!",
   },
-  {
-    id: 9,
-    name: "Isabella Taylor",
-    role: "Customer",
-    photo: "https://i.ibb.co.com/k2Mn4DgX/2628089-happy-smile-and-portrait-of-indian-woman-in-office-for-management-planning-and-data-research.jpg",
-    message:
-      "I love how friendly and professional everyone was. They made the process easy and stress-free.",
-  },
-  {
-    id: 10,
-    name: "William Thomas",
-    role: "Customer",
-    photo: "https://i.ibb.co.com/W41WrCD0/Marnus-Labuschagne.jpg",
-    message:
-      "Exceptional service and amazing support. They handled everything professionally from start to finish.",
-  },
-  {
-    id: 11,
-    name: "Mia Hernandez",
-    role: "Customer",
-    photo: "https://i.ibb.co.com/jkhpJzmP/Rilee-Rossouw.jpg",
-    message:
-      "Very impressed with the quality and efficiency of the service. I would definitely use them again.",
-  },
-  {
-    id: 12,
-    name: "Noah Moore",
-    role: "Customer",
-    photo: "https://i.ibb.co.com/bj69Xkys/images.jpg",
-    message:
-      "Highly satisfied! The team was professional, courteous, and very knowledgeable. Excellent experience.",
-  },
+ 
 ];
 
 const TestimonialsPage = () => {

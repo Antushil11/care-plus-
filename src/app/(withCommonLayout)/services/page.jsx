@@ -33,7 +33,7 @@ const Servicespage = () => {
 
   return (
     <ContainerPage>
-      <h2 className="text-2xl font-bold mb-4 text-center">Services</h2>
+      <h2 className="text-4xl font-bold  text-primary mb-6 text-center">Services</h2>
 
    
       <div className="mb-6">

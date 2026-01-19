@@ -4,11 +4,11 @@ import Image from "next/image";
 
 const AboutPage = () => {
   return (
-    <div className="mt-10">
+    <div className=" ">
       <ContainerPage>
         <section >
           {/* Heading */}
-          <h1 className="text-4xl font-bold  text-primary mb-6">About Us</h1>
+          <h1 className="text-4xl font-bold  text-primary mb-6 text-center">About Us</h1>
 
           {/* Intro Paragraph */}
           <p className="text-gray-700 text-lg mb-6 leading-relaxed">
