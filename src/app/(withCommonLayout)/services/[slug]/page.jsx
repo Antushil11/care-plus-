@@ -12,8 +12,6 @@ import { getSingleServices } from "@/services/servicesAction";
 //   return data;
 // };
 
-
-
 const ServicesDetailpage = async ({ params }) => {
   const { slug } = await params;
 
@@ -28,12 +26,13 @@ const ServicesDetailpage = async ({ params }) => {
           Category: {serviceRes.category}
         </p>
         <Image
-          src={serviceRes.image}
+          src={serviceRes.image?.trim() || "/fallback-image.jpg"} // Trim spaces and fallback
           alt={serviceRes.name}
           width={1000}
           height={600}
           className="max-w-full"
         />
+
         <p className="text-gray-800 leading-relaxed mb-4">
           {serviceRes.description}
         </p>
@@ -41,7 +40,6 @@ const ServicesDetailpage = async ({ params }) => {
           Price per hour: ${serviceRes.pricePerHour}
         </p>
         <BookingBtn service={serviceRes} />
-
       </div>
     </ContainerPage>
   );
