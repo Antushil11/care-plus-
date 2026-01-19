@@ -44,7 +44,7 @@ const ServicesCard = ({ service }) => {
 
       {/* Card content */}
       <div className="p-5 flex flex-col flex-1">
-        <span className="text-sm text-blue-600 font-medium">{category}</span>
+        <span className="text-sm text-secondary font-medium">{category}</span>
         <h2 className="text-xl font-semibold mt-1">{name}</h2>
 
         {/* Description */}
@@ -56,7 +56,7 @@ const ServicesCard = ({ service }) => {
         {description?.length > previewLength && (
           <button
             onClick={() => setShowFullDesc(!showFullDesc)}
-            className="text-blue-600 text-sm mt-1 hover:underline self-start"
+            className="text-secondary text-sm mt-1 hover:underline self-start"
           >
             {showFullDesc ? "Read Less" : "Read More"}
           </button>
@@ -64,13 +64,13 @@ const ServicesCard = ({ service }) => {
 
         {/* Footer: price + details link */}
         <div className="flex justify-between items-center mt-4">
-          <p className="text-lg font-bold text-green-600">
+          <p className="text-lg font-bold text-primary">
             ৳{pricePerHour}/hour
           </p>
 
           <Link
             href={`/services/${service?._id}`}
-            className="px-4 py-2 bg-blue-600 text-white text-sm rounded-lg hover:bg-blue-700"
+            className="btn btn-primary btn-outline"
           >
             Service Details
           </Link>

@@ -10,7 +10,7 @@ const MyBookings = () => {
 
   return <div>
 
-    {bookings?.length == 0? <h2 className="font-bold text-2xl text-primary text-center">No Bookings</h2>:<div className="grid grid-cols-1 sm:grid-cols-2  md:grid-cols-3 lg:grid-cols-4 ">
+    {bookings?.length == 0? <h2 className="font-bold text-2xl text-primary ml-200 mt-20">No Bookings ....</h2>:<div className="grid grid-cols-1 sm:grid-cols-2  md:grid-cols-3 lg:grid-cols-4 ml-10 mt-10">
               {bookings.map((service) => {
                 return (
                   <ServicesCard key={service._id} service={service}></ServicesCard>

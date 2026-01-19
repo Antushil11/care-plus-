@@ -10,7 +10,7 @@ const Servicespage = () => {
   const [category, setCategory] = useState("All");
   const [loading, setLoading] = useState(true);
 
-  // Fetch services from backend
+  
   useEffect(() => {
     const fetchServices = async () => {
       try {
@@ -25,7 +25,7 @@ const Servicespage = () => {
     fetchServices();
   }, []);
 
-  // Compute filtered services dynamically (no setState inside effect!)
+ 
   const filteredServices =
     category === "All"
       ? services
@@ -33,9 +33,9 @@ const Servicespage = () => {
 
   return (
     <ContainerPage>
-      <h2 className="text-2xl font-bold mb-4">Services</h2>
+      <h2 className="text-2xl font-bold mb-4 text-center">Services</h2>
 
-      {/* Category Filter Dropdown */}
+   
       <div className="mb-6">
         <label htmlFor="category" className="mr-2 font-medium">
           Filter by Category:
@@ -53,7 +53,7 @@ const Servicespage = () => {
         </select>
       </div>
 
-      {/* Services Grid */}
+      
       {loading ? (
        <p className="text-center"> <span className="loading loading-bars loading-lg"></span></p>
       ) : filteredServices.length === 0 ? (
