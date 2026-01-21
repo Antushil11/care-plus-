@@ -6,11 +6,11 @@ import Link from "next/link";
 import ContainerPage from "../container/page";
 
 import { signIn, signOut, useSession } from "next-auth/react";
-import Image from "next/image";
+
 
 const Navbar = () => {
   const { data: session, status } = useSession();
-  console.log(session, status);
+
 
   const nav = (
     <div className="flex font-semibold">

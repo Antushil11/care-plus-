@@ -5,7 +5,7 @@ import BookingBtn from "../_components/cards/BookingBtn";
 import { getSingleServices } from "@/services/servicesAction";
 
 // const getSingleServices = async (id) => {
-//   const res = await fetch(`http://localhost:3000/api/server/${id}`);
+//   const res = await fetch(`https://care-plus-1fht.vercel.app/api/server/${id}`);
 
 //   const data = await res.json();
 

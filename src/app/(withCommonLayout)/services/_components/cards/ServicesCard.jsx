@@ -4,7 +4,7 @@ import Image from "next/image";
 import React, { useState } from "react";
 import Link from "next/link";
 
-// Helper function to validate URLs
+
 const isValidURL = (url) => {
   if (!url) return false;
   try {
@@ -19,21 +19,21 @@ const ServicesCard = ({ service }) => {
   const { name, category, description, pricePerHour, image } = service;
   const [showFullDesc, setShowFullDesc] = useState(false);
 
-  // Show preview or full description
+ 
   const previewLength = 100;
   const shortDesc =
     description?.length > previewLength
       ? description.slice(0, previewLength) + "..."
       : description;
 
-  // Determine which image to use (fallback if invalid)
+  
   const imageSrc = isValidURL(image)
     ? image.trim()
-    : "/fallback-image.jpg"; // fallback local image
+    : "/fallback-image.jpg"; 
 
   return (
     <div className="max-w-full bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition flex flex-col">
-      {/* Image */}
+      
       <Image
         src={imageSrc}
         alt={name}
@@ -42,7 +42,7 @@ const ServicesCard = ({ service }) => {
         className="object-cover w-full h-48"
       />
 
-      {/* Card content */}
+      
       <div className="p-5 flex flex-col flex-1">
         <span className="text-sm text-secondary font-medium">{category}</span>
         <h2 className="text-xl font-semibold mt-1">{name}</h2>
