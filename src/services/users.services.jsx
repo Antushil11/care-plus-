@@ -3,7 +3,7 @@
 export const signup = async (data) => {
     console.log(data)
   const res = await fetch(
-    `${process.env.NEXT_AUTH_URL || "http://localhost:3000"}/api/server/users`,
+    `${process.env.NEXT_AUTH_URL || "https://care-plus-livid-ten.vercel.app"}/api/server/users`,
     {
       method: "POST",
       headers: {
